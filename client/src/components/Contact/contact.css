@@ -1,0 +1,206 @@
+.contact{
+    position: relative;
+    width: 100vw;
+    z-index: 2;
+    background-color: rgb(18, 17, 17);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactTop{
+    padding: 5vh 3vw 0vh 3vw;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-head{
+    margin: 4vh 0vw;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.contact-box1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.email-box,.phone-box{
+    padding: 2vh 4vw;
+    font-size: 18px;
+    text-align: center;   
+    box-shadow: rgba(254, 254, 255, 0.1) 0px 8px 24px, rgba(187, 187, 193, 0.1) 0px 16px 56px, rgba(247, 247, 249, 0.1) 0px 24px 80px;
+    transform-origin: bottom;
+}
+.email-box:hover,.phone-box:hover{
+    filter: drop-shadow(1px 1px 1px #535353);
+}
+h2{
+    margin-bottom: 10px;
+}
+.contactSection{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    margin: 8vh 0;
+}
+.contactSectionTop, .contactSectionBottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.contactBottom{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.contactSectionMid{
+    width: 100%;
+}
+.firstName,.lastname,.senderEmail,.senderPhone{
+    width: 100%;
+    margin: 0 0vw 5vh 0vw;
+    display: flex;
+    justify-content: center;
+}
+.contactSection input{
+width: 80%;
+padding: 15px;
+font-size: 18px;
+border-radius: 10px;
+}
+input:focus,textarea:focus{
+    outline: 2px solid rgba(250, 196, 3, 0.866);
+}
+.contactSectionMid,.contactSectionBtn{
+    display: flex;
+    justify-content: center;
+}
+.contactSection textarea{
+    padding: 15px;
+    font-size: 18px;
+    width: 90%;
+    height: 200px;
+border-radius: 10px;
+    margin-bottom: 5vh;
+}
+.submitBtn{
+    font-size: 22px;
+    padding: 15px;
+border-radius: 10px;
+color: white;
+font-weight: bold;
+border: none;
+background-color: rgb(17, 88, 202);
+cursor: pointer;
+}
+.submitBtn:hover{
+    background-color: rgb(0, 140, 255);
+}
+.contactBottom img{
+    width: 35px;
+    height: 35px;
+    filter: invert(100%);
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.contactBottom img:hover{
+    transform: scale(1.2);
+}
+.formStatus{
+    border-radius: 10px;
+    width: 90%;
+    padding: 10px;
+    background-color: rgb(243, 106, 106);
+    color: rgb(120, 24, 0);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5vh;
+}
+.formStatus.active{
+    background-color: rgb(109, 240, 135);
+    color: rgb(1, 96, 1);
+}
+.fillForm{
+    margin-top: 5vh;
+    font-size: 20px;
+    color: rgba(250, 196, 3, 0.866);
+    letter-spacing: 1px;
+}
+@media only screen and (max-width:950px) {
+    .contact-head{
+        margin: 4vh 0vw;
+        font-size: 25px;
+        font-weight: 700;
+        letter-spacing: 0px;
+    }
+    .contact-box1{
+        display: flex;
+        flex-direction: column ;
+        width: 100%;
+        justify-content: center;
+    }
+    .email-box,.phone-box{
+        margin: 20px;
+        font-size: 15px;
+    }
+    .contactBottom{
+        width: 80%;
+    }
+    .contactSectionTop, .contactSectionBottom{
+        flex-direction: column;
+    }
+    .contactSection input{
+        font-size: 14px;
+    }
+    .contactSection textarea{
+        width: 80%;
+        font-size: 14px;
+    }
+    .submitBtn{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .contact-head{
+        font-size: 22px;
+    }
+    .email-box,.phone-box h2{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .contact-head{
+        font-size: 24px;
+    }
+    .email-box,.phone-box h2{
+        font-size: 15px;
+    }
+    .email-box,.phone-box h4{
+        margin: 5px;
+    }
+    .contactBottom img{
+        width: 25px;
+        height: 25px;
+    }
+    .contactSection input{
+        font-size: 12px;
+    }
+    .contactSection textarea{
+        font-size: 12px;
+    }
+    .submitBtn{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:430px){
+    .contact{
+        width: 102%;
+    }
+}

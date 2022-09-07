@@ -1,0 +1,123 @@
+.home{
+    height: 100vh;
+    min-height: 450px;
+    width: 100%;
+    top: 0;
+    display: flex;  
+    justify-content: center;
+    font-family: monospace;
+}
+.home img{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background: transparent;
+}
+.container{
+    position: absolute;
+    top: 30vh;
+    text-align: center;
+    transition: all .5s ease;
+    color: white;
+}
+.projectBtn{
+    position: absolute;
+    top: 65vh;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: all .5s ease;
+}
+.head{
+    padding: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+.content{
+    font-size: 22px;
+    padding: 20px;
+
+    color: white;
+    font-weight:bold ;
+}
+.projectBtn{
+    text-decoration: none;
+    color: white;
+}.projectBtn:hover{
+    color: black;
+    background-color: white;
+}
+
+@media only screen and (max-width: 1000px){
+    .container{
+        top: 35vh;
+    }
+    .projectBtn{
+        top: 65vh;
+        font-size: 20px;
+    }
+    .head{
+        font-size: 26px;
+    }
+    .content{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .container{
+        top: 30vh;
+    }
+    .projectBtn{
+        top: 65vh;
+        font-size: 18px;
+    }
+    .head{
+        font-size: 23px;
+    }
+    .content{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    .home{
+        width: 102%;
+    }
+    .container{
+        top: 25vh;
+    }
+    .projectBtn{
+        top: 65vh;
+        font-size: 16px;
+    }
+    .head{
+        font-size: 20px;
+    }
+    .content{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-height: 500px){
+    .container{
+        top: 60px;
+    }
+    .head{
+        position: relative;
+        top: 80px;
+    }
+    .content{
+        position: relative;
+        top: 90px;
+    }
+    .projectBtn{
+        position: relative;
+        top: 325px;
+        height: 20px;
+    }
+}

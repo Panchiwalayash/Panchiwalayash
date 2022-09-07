@@ -1,0 +1,218 @@
+.about{
+    position: relative;
+    height: 100vh;
+    min-height: 450px;
+    width: 100vw;
+    z-index: 2;
+    margin: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutContainer{
+    margin-top: 5vh;
+    width: 95%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.aboutHeading{
+    font-size: 30px;
+    padding: 5px;
+    border-bottom: 2px solid rgb(87, 87, 87);
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.aboutContent{
+    font-style: italic;
+    display: flex;
+    align-items: center;
+}
+.myImg{
+    width: 350px;
+    margin-left: 2rem;
+    flex: 1;
+}
+.myImg img{
+    border: 2px solid rgb(180, 177, 177);
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.myDesc{
+    flex: 4;
+    height: 100%;
+    font-size: 18px;
+    padding: 5px;
+    color: rgb(68, 68, 68);
+    display: flex;
+    margin-left: 2rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.desc1,.desc2,.desc3{
+    width: 80%;
+    letter-spacing: 2px;
+    padding: 5px;
+    margin: 5px;
+}
+.soc-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.soc-link .link{
+    width: 50px;
+    cursor: pointer;
+}
+.soc-link .link img{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    transition: all 1s ease;
+}
+.soc-link .link img:hover{
+    transform: scale(1.2);
+    filter: invert(50%);
+}
+.soc-link .resumeBtn{
+    text-decoration: none;
+    padding: 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    font-size: 24px;
+    margin-bottom: .5vh;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    transition: all 1s ease;
+}
+.soc-link .resumeBtn:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+@media only screen and (max-width:1100px){
+    .aboutHeading{
+        font-size: 28px;
+    }
+    .myImg{
+        width: 350px;
+    }
+    .myDesc{
+        font-size: 18px;
+    }
+    .desc1,.desc2,.desc3{
+        width: 100%;
+        letter-spacing: 1px;
+    }
+}
+@media only screen and (max-width:950px){
+  .about{
+    align-items: flex-start;
+  }
+    .aboutContainer{
+        height: 87vh;
+        margin-top: 0vh;
+    }
+    .aboutContent{
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutHeading{
+        font-size: 28px;
+    }
+    .myImg{
+        width: 150px;
+    margin-left: 0;
+        object-fit: contain;
+    }
+    .myImg img{
+        border: 2px solid rgb(180, 177, 177);
+        border-radius: 50%;
+        width: 100%;
+        height: auto;
+    }
+    .myDesc{
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+    .desc1,.desc2,.desc3{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:700px){
+    .aboutContainer{
+        margin-top: 0vh;
+    }
+    .aboutHeading{
+        font-size: 20px;
+    }
+    .myImg{
+        width: 130px;
+        margin-left: 0;
+        object-fit: contain;
+    }
+    .myDesc{
+        font-size: 14px;
+        margin-left: 1.5vw;
+    }
+    .desc1,.desc2,.desc3{
+        width: 100%;
+    }
+    .soc-link .link img{
+        height: 30px;
+        width: 30px;
+        object-fit: cover;
+        transition: all 1s ease;
+    }
+    .soc-link .link img:hover{
+        transform: scale(1.1);
+        filter: invert(50%);
+    }
+    .soc-link .resumeBtn{
+        font-size: 18px;
+    }
+    .soc-link .resumeBtn:hover{
+        background-color: white;
+        color: black;
+        transform: scale(1.05);
+    }
+    
+}
+
+@media only screen and (max-width:420px){
+    .about{
+        position: relative;
+        height: 92vh;
+        width: 102vw;
+        z-index: 2;
+        margin: 0;
+        background-color: white;
+        display: flex;
+        align-items: flex-start;
+    }
+    .myDesc{
+        margin: 1vw;
+    }
+    .desc1,.desc2,.desc3{
+        font-size: 13px;
+    }
+    .aboutHeading{
+        font-size: 16px;
+        padding: 2px;
+        border-bottom: 1px solid rgba(250, 168, 3, 0.866);
+        letter-spacing: 1px;
+    }
+}
+@media only screen and (max-height:500px){
+    .about{
+        height: 500px;
+    }
+    .aboutContainer{
+        height: 100%;
+    }
+}

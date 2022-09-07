@@ -1,0 +1,96 @@
+.hyperlink{
+    width: 350px;
+    height: 500px;
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+}
+.project-component{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    align-items: center;
+    transition: all 1s ease;
+}
+.project-img{
+    width: 100%;
+    margin-bottom: 20px; 
+}
+.project-img img{ 
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+.project-component .com-title{
+    color: rgb(243, 217, 49);
+    font-size: 21px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.project-component .com-desc{
+    width: 90%;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.project-component.active {
+    transform: scale(1.05);
+    background-color:rgb(223, 222, 222);
+}
+.project-component.active img{
+    filter: brightness(62%);
+}
+
+@media only screen and (max-width:1000px) {
+    .project-component .com-title{
+        font-size: 18px;
+    }
+    .project-component .com-desc{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .project-component .com-title{
+        font-size: 18px;
+    }
+    .project-component .com-desc{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width:430px) {
+    .hyperlink{
+        width: 300px;
+        height: 450px;
+        margin: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    .project-component .com-title{
+        font-size: 16px;
+    }
+    .project-component .com-desc{
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+@media only screen and (max-width:350px) {
+    .hyperlink{
+        width: 300px;
+        height: 400px;
+        margin: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    .project-component .com-title{
+        font-size: 15px;
+    }
+    .project-component .com-desc{
+        font-size: 12px;
+    }
+}
