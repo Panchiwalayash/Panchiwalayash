@@ -4,18 +4,22 @@ const cors = require("cors");
 const path = require('path')
 const nodemailer = require("nodemailer");
 require('dotenv').config()
+
 const app = express();
+
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
 
-  app.use(express.static(path.join(__dirname,'/client/build')));
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname  + '/client/build','index.html'));
-    })
+// changes require for deployment
+app.use(express.static(path.join(__dirname, '/client/build')));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/client/build', 'index.html'));
+})
 
 app.listen(process.env.PORT || 5000, () => console.log("Running..."));
 
+// giving contact details
 const contactEmail = nodemailer.createTransport({
   service: 'Hotmail',
   auth: {
@@ -31,6 +35,8 @@ contactEmail.verify((error) => {
     console.log("Ready to Send");
   }
 });
+
+// router for sending mail
 router.post("/contact", (req, res) => {
   const name = req.body.first + " " + req.body.last;
   const email = req.body.email;
@@ -47,9 +53,9 @@ router.post("/contact", (req, res) => {
   };
   contactEmail.sendMail(mail, (error) => {
     if (error) {
-      res.json({ status: "false" });
+      res.json({ status: false });
     } else {
-      res.json({ status: "true" });
+      res.json({ status: true });
     }
   });
 });

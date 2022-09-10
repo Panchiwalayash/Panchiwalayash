@@ -12,7 +12,7 @@ export const About = () => {
             <div className="desc1"> My name is Yash Panchiwala. I'm an Btech student at PDEU Computer Science Department. I was born in Deesa and raised in Ahmedabad.I had did my HSC and SSC from Gujarat Board.</div>
             <div className="desc2">My area of interest are Web Development, Data Structure, UI/UX Design and Data Science. I love working withgreat people, inspiring others, and being inspired.</div>
             <div className="desc3">
-            I like to travel alot. I believe travelling gives you a new perspective to everything and also Relieves Stress. We meet new people, see more places, enjoy more cultures and  view many beautiful sceneries.
+              I like to travel alot. I believe travelling gives you a new perspective to everything and also Relieves Stress. We meet new people, see more places, enjoy more cultures and  view many beautiful sceneries.
             </div>
           </div>
         </div>
