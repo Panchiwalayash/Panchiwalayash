@@ -54,7 +54,7 @@ export const Contact = () => {
       }
       else {
         Swal.fire({
-          title: 'Good job',
+          title: 'error',
           text: 'There is some error. Please try again later.',
           icon: 'error',
           background: "black",
@@ -64,7 +64,7 @@ export const Contact = () => {
       }
     } catch (error) {
       Swal.fire({
-        title: 'Good job',
+        title: 'error',
         text: 'There is some error. Please try again later.',
         icon: 'error',
         background: "black",
