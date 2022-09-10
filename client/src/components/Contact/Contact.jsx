@@ -42,7 +42,6 @@ export const Contact = () => {
       emailRef.current.value = ""
       messageRef.current.value = ""
       phoneRef.current.value = ""
-      if (success === "true") {
         Swal.fire({
           title: 'Thank you!',
           text: 'Your detail has been send.',
@@ -51,17 +50,7 @@ export const Contact = () => {
           color: "white"
         }
         )
-      }
-      else {
-        Swal.fire({
-          title: 'error',
-          text: 'There is some error. Please try again later.',
-          icon: 'error',
-          background: "black",
-          color: "white"
-        }
-        )
-      }
+      
     } catch (error) {
       Swal.fire({
         title: 'error',
